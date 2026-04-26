@@ -1,5 +1,6 @@
 import { Github } from "lucide-react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -7,8 +8,10 @@ const Navbar = () => {
       <h1>NextStarter</h1>
 
       <div className="flex items-center gap-4">
-        <a href="#">Features</a>
-        <a href="#">Get Started</a>
+        <Link href = "/features">Feature</Link>
+        <Link href = "/products">Product</Link>
+        <a href="/Features" >Features</a>
+        {/* <a href="#">Get Started</a> */}
         <Button variant="outline">
           <Github /> GitHub
         </Button>
@@ -18,3 +21,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+//target ="_blank"
